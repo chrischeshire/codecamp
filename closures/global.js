@@ -1,11 +1,11 @@
 var count = 0;
 
-function addMan() {
+function countMen() {
   count += 1;
   return count + ' men';
 }
 
-function addWoman() {
+function countWoman() {
   count += 1;
   return count + ' women';
 }

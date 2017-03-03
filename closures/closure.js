@@ -1,10 +1,15 @@
 var men = 3;
 
-function countPeople() {
-  var women = 5
-  console.log(women);
-  console.log(men);
+function countPeople() { //outer function
+  var women = 7;
+
+  function show_Women(){ //inner function
+    console.log(women);
+  }
+
+  return show_Women;
 }
 
-console.log(women);
-console.log(men);
+var getWomen = countPeople();
+
+getWomen();
